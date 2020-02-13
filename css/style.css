@@ -1,0 +1,278 @@
+/* RESETS */
+html, body,a, p, span,
+em, small, strong
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+.jumbotron{
+  background-color: rgba(0,0,0,0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+h5{
+  color: #666;
+  font-weight: 100;
+}
+
+/* END OF RESETS */
+section{
+  height: 100%;
+    min-height:55vh;
+    width:100%;
+    padding: 35px;
+}
+
+.footer{
+  padding: 40px;
+  border: 20px solid white;
+}
+.footer a{
+  color: #333;
+  font-family: 'Rubik', sans-serif;
+}
+
+.medium-height{
+  /* height: 50vh; */
+  min-height: 30vh;
+}
+
+.small-height{
+  min-height:25vh;
+}
+
+.micro{
+  min-height:10vh;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+.bg-lighter{
+    background-color: rgba(0,0,0,0.05);
+}
+.bg-medium{
+    background-color: rgba(0,0,0,0.09);
+}
+
+.roundedRectangleBlack {
+    border-radius: 1.25rem;
+    border: 5px solid #212529;
+    min-height: 100px;
+    padding: 20px;
+    color: #212529;
+    font-weight: bold;
+    text-align: left;
+  }
+  .roundedRectangleWhite {
+    border-radius: 1.25rem;
+    border: 5px solid white;
+    min-height: 100px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .pullQuote {
+    position: absolute;
+    width: 25%;
+  }
+  
+  .pullQuoteLeft{
+    left: 10%;
+  }
+  .pullQuoteRight{
+    right: 10%;
+  }
+  
+  .pullQuoteBottom {
+    bottom: 10%;
+  }
+  
+  .pullQuoteTop{
+    top: 10%;
+  }
+  
+  .roundedRectangleWhite h1, .roundedRectangleWhite h2, .roundedRectangleWhite h3, .roundedRectangleWhite h4, .roundedRectangleWhite h5{
+    color: white;
+  }
+  
+  .bg-master-light img, .bg-master-dark img, .bg-master-darkest img{
+    border: 15px solid white;
+  }
+
+  .bg-dark{
+    background: #333!important;
+  }
+
+  .bg-dark, .bg-dark a{
+    color: white;
+  }
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  border: 20px solid white;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+  header {
+    border: none;
+  }
+  html, body{
+    text-align: left;
+  }
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #0b0b3c; */
+  opacity: 0.4;
+  background-color: black;
+  /* opacity: 0.65; */
+  z-index: 1;
+}
+
+header .logo{
+  height: 25vh;
+  width: auto;
+  opacity: 0.75;
+}
+
+small{
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.65rem;
+}
+
+.caseStudyCard{
+  border-radius: 1.25rem;
+}
+
+.caseStudyCard .card-header:first-child {
+  border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;
+}
+
+.caseStudyCard .card-body{
+  /* padding: 1.25rem; */
+}
+
+.caseStudyCard .card-text, .caseStudyCard .card-title{
+  /* padding: 1.25rem; */
+}
+
+.caseStudyCard{
+  margin-bottom: 20px;
+
+  /* -webkit-box-shadow: -39px 24px 29px -7px rgba(0,0,0,0.25);
+-moz-box-shadow: -39px 24px 29px -7px rgba(0,0,0,0.25);
+box-shadow: -39px 24px 29px -7px rgba(0,0,0,0.25); */
+}
+
+.caseStudyCard .card-header{
+  /* height: 200px; */
+}
+
+.caseStudyCard h2 {
+  font-size: 3rem;
+  color: white;
+}
+.sansText {
+  font-family: 'Rubik', 'sans';
+}
+h1 i{
+  font-size: 5rem;
+}
+
+.card-i-top{
+  font-size: 4rem;
+  color: #d0cfcf;
+}
+
+video::-webkit-media-controls-panel {
+  background-image: none !important;
+  filter: brightness(0.6);
+
+ }
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+ .wrapped {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .wrapped {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .caseStudyCard {
+    margin-bottom: 0px;
+  }
+}
+
+.extra-space{
+  padding: 45px;
+}
